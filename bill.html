@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bill Calculator</title>
+</head>
+<body>
+    <h2>My Bill Calculator</h2>
+    <p>
+        Test your JavaScript Billing Here...
+        
+    </p>
+    
+    <p id="test">
+
+    </p>
+    <script>
+        //Declare your variables
+        let price = Number(prompt("Price of Item?"));
+        let quantity = Number(prompt("Quantity to buy?"));
+
+        //Calculate the total
+        let total = price * quantity;
+        console.log(total);
+        document.getElementById('test').textContent = `The TOTAL price is N ${total}`;
+    </script>
+</body>
+</html>

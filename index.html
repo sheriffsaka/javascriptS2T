@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a JavaScript Coding Experience</title>
+</head>
+<body>
+
+    <h2>Pracricing JavaScript Feels Like AI in action!!!</h2>
+    <p id="switch">
+        Today's Features: 
+    </p>
+    <!--This is JavaScript below-->
+    <script>
+        // JavaScript starts here
+        console.log("Welcome to my JavaScript Class!!!");
+        let a = "Sheriff Saka";
+        b = a + " " + "is a programmer";
+        console.log(b);
+        let x = 5;
+        x -= 3;
+        console.log('X = ', x);
+        let y=5;
+        ++y;
+        console.log('Y = ', y);
+
+        let temp = 25;
+
+        if (temp > 30){
+            console.log("It is hot taday!!!");
+        }else if (temp < 25) {
+            console.log("It is very cold today!!!");
+        }else{
+            console.log("The weather is chilly today!!!");
+        }
+
+        //Testing the switch statement
+        let dayOfWeek = "Wednesday";
+        let messageDay;
+        switch (dayOfWeek) {
+        case "Monday":
+        messageDay = "Start of the work week.";
+        break;
+        case "Friday":
+        messageDay = "Almost the weekend!";
+        break;
+        case "Saturday":
+        case "Sunday":
+        messageDay = "It's the weekend!";
+        break;
+        default:
+        messageDay = "It's a regular weekday.";
+        }
+        console.log(messageDay); // Output: It's a regular weekday.
+        // document.getElementById('switch').textContent = messageDay;
+        document.getElementById('switch').innerHTML = `<strong>${messageDay}'</strong>`;
+
+        let myName = 'Sheriff';
+        let city = 'Kano';
+        let age = 25;
+        console.log(`My name is ${myName} from ${city} and I am ${age} years old.`);
+        document.getElementById('switch').innerHTML = `My name is ${myName} from ${city} and I am ${age} years old.`;
+    </script>
+    
+</body>
+</html>
